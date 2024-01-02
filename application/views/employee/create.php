@@ -34,11 +34,7 @@
                 <div class="mb-3">
                     <label  class="form-label">Email</label>
                     <input type="text" class="form-control" id="" name="email" value="<?php echo set_value('email')?>">
-                    <?php if (form_error('email')){ ?>
-                      <span class="invalid-feedback d-block" role="alert">
-                        <strong><?= form_error('email'); ?></strong>
-                      </span>
-                    <?php } ?>
+                    <?php echo form_error('email','<span class="invalid-feedback d-block" role="alert"><strong>','</strong></span>'); ?>
                 </div>
 
                 <div class="mb-3">
